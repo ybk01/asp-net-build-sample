@@ -1,0 +1,112 @@
+api = "0.6"
+
+[buildpack]
+  description = "A buildpack for installing the approriate .NET Core ASP.NET version"
+  homepage = "https://github.com/paketo-buildpacks/dotnet-core-aspnet"
+  id = "paketo-buildpacks/dotnet-core-aspnet"
+  keywords = ["dotnet", "ASP.NET"]
+  name = "Paketo ASP.NET Core Buildpack"
+
+  [[buildpack.licenses]]
+    type = "Apache-2.0"
+    uri = "https://github.com/paketo-buildpacks/dotnet-core-aspnet/blob/main/LICENSE"
+
+[metadata]
+  include-files = ["bin/build", "bin/detect", "bin/run", "buildpack.toml"]
+  pre-package = "./scripts/build.sh"
+
+  [[metadata.dependencies]]
+    cpe = "cpe:2.3:a:microsoft:asp.net_core:3.1:*:*:*:*:*:*:*"
+    deprecation_date = "2022-12-03T00:00:00Z"
+    id = "dotnet-aspnetcore"
+    licenses = ["MIT", "MIT-0"]
+    purl = "pkg:generic/dotnet-aspnetcore@3.1.21?checksum=02692dddac6dbd306472eb81678624992f36e85a5deca34fb6d5e3c18d5f639f&download_url=https://download.visualstudio.microsoft.com/download/pr/c4565012-97e8-4a5a-9edf-8d6c94f0ac5c/dd227c01d532bcb731b026243a51f55f/aspnetcore-runtime-3.1.21-linux-x64.tar.gz"
+    sha256 = "5f998fa7f7ef5208ab51aba3e88bff42435238dd46f88b0452b39786ab36f8e4"
+    source = "https://download.visualstudio.microsoft.com/download/pr/c4565012-97e8-4a5a-9edf-8d6c94f0ac5c/dd227c01d532bcb731b026243a51f55f/aspnetcore-runtime-3.1.21-linux-x64.tar.gz"
+    source_sha256 = "02692dddac6dbd306472eb81678624992f36e85a5deca34fb6d5e3c18d5f639f"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://deps.paketo.io/dotnet-aspnetcore/dotnet-aspnetcore_3.1.21_linux_x64_bionic_5f998fa7.tar.xz"
+    version = "3.1.21"
+
+  [[metadata.dependencies]]
+    cpe = "cpe:2.3:a:microsoft:asp.net_core:3.1:*:*:*:*:*:*:*"
+    deprecation_date = "2022-12-03T00:00:00Z"
+    id = "dotnet-aspnetcore"
+    licenses = ["MIT", "MIT-0"]
+    purl = "pkg:generic/dotnet-aspnetcore@3.1.22?checksum=1ec19c78b4497e12447415561d2b55d6d6ecb396596f2dfa27f6d85856f2a802&download_url=https://download.visualstudio.microsoft.com/download/pr/ded261a4-ec9a-46be-8359-3055e73ff388/9ab54349df5185d4f548abdca3dd523d/aspnetcore-runtime-3.1.22-linux-x64.tar.gz"
+    sha256 = "7268fdb0ad55c55222361f1a5ba01175cb8d4cb1fee7924a9390290a0c48d7fb"
+    source = "https://download.visualstudio.microsoft.com/download/pr/ded261a4-ec9a-46be-8359-3055e73ff388/9ab54349df5185d4f548abdca3dd523d/aspnetcore-runtime-3.1.22-linux-x64.tar.gz"
+    source_sha256 = "1ec19c78b4497e12447415561d2b55d6d6ecb396596f2dfa27f6d85856f2a802"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://deps.paketo.io/dotnet-aspnetcore/dotnet-aspnetcore_3.1.22_linux_x64_bionic_7268fdb0.tar.xz"
+    version = "3.1.22"
+
+  [[metadata.dependencies]]
+    cpe = "cpe:2.3:a:microsoft:asp.net_core:5.0:*:*:*:*:*:*:*"
+    deprecation_date = "2022-05-08T00:00:00Z"
+    id = "dotnet-aspnetcore"
+    licenses = ["MIT", "MIT-0"]
+    purl = "pkg:generic/dotnet-aspnetcore@5.0.13?checksum=45cb6eb3ad9592f649359c2a0eb60a87c51f2d039f17f20d57c79b625fe93119&download_url=https://download.visualstudio.microsoft.com/download/pr/b71393db-7953-4eaf-aff7-6f799bf40718/68a8f4b74a5528aeb96514268651e3eb/aspnetcore-runtime-5.0.13-linux-x64.tar.gz"
+    sha256 = "856867427f4a31ba0502325e9bf84ea77790fd4427f0bf02c131d86b86379e3e"
+    source = "https://download.visualstudio.microsoft.com/download/pr/b71393db-7953-4eaf-aff7-6f799bf40718/68a8f4b74a5528aeb96514268651e3eb/aspnetcore-runtime-5.0.13-linux-x64.tar.gz"
+    source_sha256 = "45cb6eb3ad9592f649359c2a0eb60a87c51f2d039f17f20d57c79b625fe93119"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://deps.paketo.io/dotnet-aspnetcore/dotnet-aspnetcore_5.0.13_linux_x64_bionic_85686742.tar.xz"
+    version = "5.0.13"
+
+  [[metadata.dependencies]]
+    cpe = "cpe:2.3:a:microsoft:asp.net_core:5.0:*:*:*:*:*:*:*"
+    deprecation_date = "2022-05-08T00:00:00Z"
+    id = "dotnet-aspnetcore"
+    licenses = ["MIT", "MIT-0"]
+    purl = "pkg:generic/dotnet-aspnetcore@5.0.14?checksum=7e1cf5abc591985f4087650cc2cb599caa046004f8b08e2b81199c63dbc0681c&download_url=https://download.visualstudio.microsoft.com/download/pr/f56adf04-e4a8-48bf-b2e2-722e7206a4f2/7f40d4ebeff281120ba76e7b091356b0/aspnetcore-runtime-5.0.14-linux-x64.tar.gz"
+    sha256 = "d07cd8284bcb8130bf438f0f3fbaa4574011c4b0a9930d47e3e04e5d246f9aa7"
+    source = "https://download.visualstudio.microsoft.com/download/pr/f56adf04-e4a8-48bf-b2e2-722e7206a4f2/7f40d4ebeff281120ba76e7b091356b0/aspnetcore-runtime-5.0.14-linux-x64.tar.gz"
+    source_sha256 = "7e1cf5abc591985f4087650cc2cb599caa046004f8b08e2b81199c63dbc0681c"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://deps.paketo.io/dotnet-aspnetcore/dotnet-aspnetcore_5.0.14_linux_x64_bionic_d07cd828.tar.xz"
+    version = "5.0.14"
+
+  [[metadata.dependencies]]
+    cpe = "cpe:2.3:a:microsoft:asp.net_core:6.0:*:*:*:*:*:*:*"
+    deprecation_date = "2024-11-08T00:00:00Z"
+    id = "dotnet-aspnetcore"
+    licenses = ["MIT", "MIT-0"]
+    purl = "pkg:generic/dotnet-aspnetcore@6.0.1?checksum=ae7dce00eec4bc5431faacc574193b1a920d8a7e92abc4bec6288c20a8a507f6&download_url=https://download.visualstudio.microsoft.com/download/pr/32230fb9-df1e-4b86-b009-12d889cbfa8a/f57a5d92327bb2936caac94bcf602c22/aspnetcore-runtime-6.0.1-linux-x64.tar.gz"
+    sha256 = "9bf95b22531fb96180a9ce3a06a9d09ba2d99a55d1806040e91bdf84201aa19f"
+    source = "https://download.visualstudio.microsoft.com/download/pr/32230fb9-df1e-4b86-b009-12d889cbfa8a/f57a5d92327bb2936caac94bcf602c22/aspnetcore-runtime-6.0.1-linux-x64.tar.gz"
+    source_sha256 = "ae7dce00eec4bc5431faacc574193b1a920d8a7e92abc4bec6288c20a8a507f6"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://deps.paketo.io/dotnet-aspnetcore/dotnet-aspnetcore_6.0.1_linux_x64_bionic_9bf95b22.tar.xz"
+    version = "6.0.1"
+
+  [[metadata.dependencies]]
+    cpe = "cpe:2.3:a:microsoft:asp.net_core:6.0:*:*:*:*:*:*:*"
+    deprecation_date = "2024-11-08T00:00:00Z"
+    id = "dotnet-aspnetcore"
+    licenses = ["MIT", "MIT-0"]
+    purl = "pkg:generic/dotnet-aspnetcore@6.0.2?checksum=6bd6ceb4a3d04734668b3201c1e7e15825fe63fde189e5b7fb5479fd9dcd751c&download_url=https://download.visualstudio.microsoft.com/download/pr/26078483-7a4c-4113-8c39-eab5ee24f10f/3c2d24a5c71179af652cc92e8b57eb5f/aspnetcore-runtime-6.0.2-linux-x64.tar.gz"
+    sha256 = "06d3ba0fc4ef004f537fa75c77c948bbcf1185c7096898db97751af45521fd90"
+    source = "https://download.visualstudio.microsoft.com/download/pr/26078483-7a4c-4113-8c39-eab5ee24f10f/3c2d24a5c71179af652cc92e8b57eb5f/aspnetcore-runtime-6.0.2-linux-x64.tar.gz"
+    source_sha256 = "6bd6ceb4a3d04734668b3201c1e7e15825fe63fde189e5b7fb5479fd9dcd751c"
+    stacks = ["io.buildpacks.stacks.bionic"]
+    uri = "https://deps.paketo.io/dotnet-aspnetcore/dotnet-aspnetcore_6.0.2_linux_x64_bionic_06d3ba0f.tar.xz"
+    version = "6.0.2"
+
+  [[metadata.dependency-constraints]]
+    constraint = "3.1.*"
+    id = "dotnet-aspnetcore"
+    patches = 2
+
+  [[metadata.dependency-constraints]]
+    constraint = "5.0.*"
+    id = "dotnet-aspnetcore"
+    patches = 2
+
+  [[metadata.dependency-constraints]]
+    constraint = "6.0.*"
+    id = "dotnet-aspnetcore"
+    patches = 2
+
+[[stacks]]
+  id = "io.buildpacks.stacks.bionic"
